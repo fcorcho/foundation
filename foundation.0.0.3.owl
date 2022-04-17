@@ -1,0 +1,1648 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#"
+     xml:base="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:tso="http://purl.org/umu/tso#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:page="dbpedia.org/page/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:page1="http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation">
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation/0.0.2"/>
+        <owl:imports rdf:resource="http://purl.org/dc/terms/"/>
+        <dc:creator>Francisco José Corcho Sánchez</dc:creator>
+        <dc:title>Ontology of the Foundation TV Series based on tso ontology</dc:title>
+        <rdfs:comment>This Ontology describes the Foundation TV Series. It is based on the work
+&quot;A conceptual model for an OWL ontology to represent the
+knowledge of transmedia storytelling&quot;. In this paper the authors have developed an OWL ontology from the conceptual model, whose
+namespace (also valid for downloading) is http://purl.org/umu/tso/ and its
+documentation is available at http://skos.um.es/TR/tso/.</rdfs:comment>
+        <rdfs:label>Foundation Ontology</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- dbpedia.org/page/isClonOf -->
+
+    <owl:AnnotationProperty rdf:about="dbpedia.org/page/isClonOf"/>
+    
+
+
+    <!-- dbpedia.org/page/isDescendantOf -->
+
+    <owl:AnnotationProperty rdf:about="dbpedia.org/page/isDescendantOf"/>
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/isClonOf -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/isClonOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/isDescendantOf -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/isDescendantOf"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#example -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#example"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#scopeNote -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#scopeNote"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/umu/tso#hasCast -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/umu/tso#hasCast"/>
+    
+
+
+    <!-- http://purl.org/umu/tso#hasCharacter -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/umu/tso#hasCharacter"/>
+    
+
+
+    <!-- http://purl.org/umu/tso#hasContribution -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/umu/tso#hasContribution"/>
+    
+
+
+    <!-- http://purl.org/umu/tso#hasFirstEpisode -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/umu/tso#hasFirstEpisode"/>
+    
+
+
+    <!-- http://purl.org/umu/tso#hasFirstSeason -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/umu/tso#hasFirstSeason"/>
+    
+
+
+    <!-- http://purl.org/umu/tso#hasItineraryResource -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/umu/tso#hasItineraryResource"/>
+    
+
+
+    <!-- http://purl.org/umu/tso#hasMember -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/umu/tso#hasMember"/>
+    
+
+
+    <!-- http://purl.org/umu/tso#hasNextEpisode -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/umu/tso#hasNextEpisode"/>
+    
+
+
+    <!-- http://purl.org/umu/tso#hasPart -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/umu/tso#hasPart"/>
+    
+
+
+    <!-- http://purl.org/umu/tso#hasPerson -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/umu/tso#hasPerson"/>
+    
+
+
+    <!-- http://purl.org/umu/tso#hasPreviousEpisode -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/umu/tso#hasPreviousEpisode"/>
+    
+
+
+    <!-- http://purl.org/umu/tso#hasRelatedLocation -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/umu/tso#hasRelatedLocation"/>
+    
+
+
+    <!-- http://purl.org/umu/tso#hasRelationType -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/umu/tso#hasRelationType"/>
+    
+
+
+    <!-- http://purl.org/umu/tso#hasRole -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/umu/tso#hasRole"/>
+    
+
+
+    <!-- http://purl.org/umu/tso#hasSubgroup -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/umu/tso#hasSubgroup"/>
+    
+
+
+    <!-- http://purl.org/umu/tso#isCastOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/umu/tso#isCastOf"/>
+    
+
+
+    <!-- http://purl.org/umu/tso#isContributionOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/umu/tso#isContributionOf"/>
+    
+
+
+    <!-- http://purl.org/umu/tso#isFirstEpisodeOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/umu/tso#isFirstEpisodeOf"/>
+    
+
+
+    <!-- http://purl.org/umu/tso#isMemberOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/umu/tso#isMemberOf"/>
+    
+
+
+    <!-- http://purl.org/umu/tso#isSubgroupOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/umu/tso#isSubgroupOf"/>
+    
+
+
+    <!-- http://purl.org/umu/tso#relationshipAgent -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/umu/tso#relationshipAgent"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/isBrotherOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/isBrotherOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/isClonOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/isClonOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/isDescendantOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/isDescendantOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/isEnemyOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/isEnemyOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/isHuman -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/isHuman"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/isRobot -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/isRobot"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#isCloneOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#isCloneOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/umu/tso#Agent -->
+
+    <owl:Class rdf:about="http://purl.org/umu/tso#Agent">
+        <rdfs:comment xml:lang="en">An agent is a person or organization (real or fictitious) that participates in some way in the elaboration of a resource or is part of the argument of the content. The agents participate in content resources as part of the cast or the creative or technical team that contributes to its creation.</rdfs:comment>
+        <rdfs:label xml:lang="en">Agent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/umu/tso#Article -->
+
+    <owl:Class rdf:about="http://purl.org/umu/tso#Article">
+        <rdfs:subClassOf rdf:resource="http://purl.org/umu/tso#Wiki"/>
+        <rdfs:label xml:lang="en">Article</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/umu/tso#Blog -->
+
+    <owl:Class rdf:about="http://purl.org/umu/tso#Blog">
+        <rdfs:subClassOf rdf:resource="http://purl.org/umu/tso#OnlineResourceService"/>
+        <rdfs:label xml:lang="en">Blog</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/umu/tso#Book -->
+
+    <owl:Class rdf:about="http://purl.org/umu/tso#Book">
+        <rdfs:subClassOf rdf:resource="http://purl.org/umu/tso#ContentResource"/>
+        <rdfs:label xml:lang="en">Book</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/umu/tso#Cast -->
+
+    <owl:Class rdf:about="http://purl.org/umu/tso#Cast">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/umu/tso#hasPerson"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/umu/tso#Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/umu/tso#hasCharacter"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/umu/tso#Character"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/umu/tso#isCastOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/umu/tso#ContentResource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/umu/tso#hasPerson"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/umu/tso#Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Cast is the actor or actress that is needed to play the role</rdfs:comment>
+        <rdfs:label xml:lang="en">Cast</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/umu/tso#Category -->
+
+    <owl:Class rdf:about="http://purl.org/umu/tso#Category">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Category</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/umu/tso#Character -->
+
+    <owl:Class rdf:about="http://purl.org/umu/tso#Character">
+        <rdfs:subClassOf rdf:resource="http://purl.org/umu/tso#Agent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/umu/tso#isMemberOf"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/umu/tso#FictionalGroup"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Character if it is interpreted it is related with a Cast</rdfs:comment>
+        <rdfs:label xml:lang="en">Character</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/umu/tso#Comic -->
+
+    <owl:Class rdf:about="http://purl.org/umu/tso#Comic">
+        <rdfs:subClassOf rdf:resource="http://purl.org/umu/tso#ContentResource"/>
+        <rdfs:label xml:lang="en">Comic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/umu/tso#ContentResource -->
+
+    <owl:Class rdf:about="http://purl.org/umu/tso#ContentResource">
+        <rdfs:subClassOf rdf:resource="http://purl.org/umu/tso#Resource"/>
+        <rdfs:label xml:lang="en">Content Resource</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/umu/tso#Context -->
+
+    <owl:Class rdf:about="http://purl.org/umu/tso#Context">
+        <rdfs:label xml:lang="en">Context</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/umu/tso#Contribution -->
+
+    <owl:Class rdf:about="http://purl.org/umu/tso#Contribution">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/umu/tso#hasPerson"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/umu/tso#Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/umu/tso#hasRole"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/umu/tso#Role"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/umu/tso#isContributionOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/umu/tso#ContentResource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Contribution is the participation of a person in the project</rdfs:comment>
+        <rdfs:label xml:lang="en">Contribution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/umu/tso#Episode -->
+
+    <owl:Class rdf:about="http://purl.org/umu/tso#Episode">
+        <rdfs:subClassOf rdf:resource="http://purl.org/umu/tso#ContentResource"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/umu/tso#hasNextEpisode"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/umu/tso#TVSerie"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/umu/tso#hasPreviousEpisode"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/umu/tso#TVSerie"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/umu/tso#isFirstEpisodeOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/umu/tso#TVSerie"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/umu/tso#hasNextEpisode"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/umu/tso#TVSerie"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/umu/tso#hasPreviousEpisode"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/umu/tso#TVSerie"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Episode</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/umu/tso#Event -->
+
+    <owl:Class rdf:about="http://purl.org/umu/tso#Event">
+        <rdfs:subClassOf rdf:resource="http://purl.org/umu/tso#Fragment"/>
+        <rdfs:label xml:lang="en">Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/umu/tso#FictionalGroup -->
+
+    <owl:Class rdf:about="http://purl.org/umu/tso#FictionalGroup">
+        <rdfs:subClassOf rdf:resource="http://purl.org/umu/tso#Agent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/umu/tso#hasMember"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/umu/tso#Character"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/umu/tso#hasSubgroup"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/umu/tso#FictionalGroup"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/umu/tso#isSubgroupOf"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/umu/tso#FictionalGroup"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Fictional group is used to define factions</rdfs:comment>
+        <rdfs:label xml:lang="en">Fictional Group</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/umu/tso#FictionalLocation -->
+
+    <owl:Class rdf:about="http://purl.org/umu/tso#FictionalLocation">
+        <rdfs:subClassOf rdf:resource="http://purl.org/umu/tso#Location"/>
+        <rdfs:comment>A fictional location where action takes place</rdfs:comment>
+        <rdfs:label xml:lang="en">Fictional Location</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/umu/tso#FictionalPeriod -->
+
+    <owl:Class rdf:about="http://purl.org/umu/tso#FictionalPeriod">
+        <rdfs:subClassOf rdf:resource="http://purl.org/umu/tso#Period"/>
+        <rdfs:label xml:lang="en">Fictional Period</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/umu/tso#Film -->
+
+    <owl:Class rdf:about="http://purl.org/umu/tso#Film">
+        <rdfs:subClassOf rdf:resource="http://purl.org/umu/tso#ContentResource"/>
+        <rdfs:label xml:lang="en">Film</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/umu/tso#Fragment -->
+
+    <owl:Class rdf:about="http://purl.org/umu/tso#Fragment">
+        <rdfs:subClassOf rdf:resource="http://purl.org/umu/tso#ContentResource"/>
+        <rdfs:label xml:lang="en">Fragment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/umu/tso#Group -->
+
+    <owl:Class rdf:about="http://purl.org/umu/tso#Group">
+        <rdfs:subClassOf rdf:resource="http://purl.org/umu/tso#Agent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/umu/tso#hasMember"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/umu/tso#Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/umu/tso#hasSubgroup"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/umu/tso#Group"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/umu/tso#isSubgroupOf"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/umu/tso#Group"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Group is defined  to represent group of people being part of the project</rdfs:comment>
+        <rdfs:label xml:lang="en">Group</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/umu/tso#Itinerary -->
+
+    <owl:Class rdf:about="http://purl.org/umu/tso#Itinerary">
+        <rdfs:label xml:lang="en">Itinerary</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/umu/tso#ItineraryResource -->
+
+    <owl:Class rdf:about="http://purl.org/umu/tso#ItineraryResource">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/umu/tso#hasItineraryResource"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/umu/tso#Resource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Itinerary Resource</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/umu/tso#Location -->
+
+    <owl:Class rdf:about="http://purl.org/umu/tso#Location">
+        <rdfs:comment>Location describes either a real or fictional</rdfs:comment>
+        <rdfs:label xml:lang="en">Location</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/umu/tso#Multimedia -->
+
+    <owl:Class rdf:about="http://purl.org/umu/tso#Multimedia">
+        <rdfs:subClassOf rdf:resource="http://purl.org/umu/tso#OnlineResourceService"/>
+        <rdfs:label xml:lang="en">Multimedia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/umu/tso#MultimediaObject -->
+
+    <owl:Class rdf:about="http://purl.org/umu/tso#MultimediaObject">
+        <rdfs:subClassOf rdf:resource="http://purl.org/umu/tso#Multimedia"/>
+        <rdfs:label xml:lang="en">Multimedia Object</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/umu/tso#OnlineGame -->
+
+    <owl:Class rdf:about="http://purl.org/umu/tso#OnlineGame">
+        <rdfs:subClassOf rdf:resource="http://purl.org/umu/tso#OnlineResourceService"/>
+        <rdfs:label xml:lang="en">Online Game</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/umu/tso#OnlineResourceService -->
+
+    <owl:Class rdf:about="http://purl.org/umu/tso#OnlineResourceService">
+        <rdfs:subClassOf rdf:resource="http://purl.org/umu/tso#Resource"/>
+        <rdfs:label xml:lang="en">Online Resource/Service</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/umu/tso#Period -->
+
+    <owl:Class rdf:about="http://purl.org/umu/tso#Period">
+        <rdfs:label xml:lang="en">Period</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/umu/tso#Person -->
+
+    <owl:Class rdf:about="http://purl.org/umu/tso#Person">
+        <rdfs:subClassOf rdf:resource="http://purl.org/umu/tso#Agent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/umu/tso#isMemberOf"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/umu/tso#Group"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>All the people that participate in the project</rdfs:comment>
+        <rdfs:label xml:lang="en">Person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/umu/tso#Post -->
+
+    <owl:Class rdf:about="http://purl.org/umu/tso#Post">
+        <rdfs:subClassOf rdf:resource="http://purl.org/umu/tso#Blog"/>
+        <rdfs:label xml:lang="en">Post</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/umu/tso#Product -->
+
+    <owl:Class rdf:about="http://purl.org/umu/tso#Product">
+        <rdfs:subClassOf rdf:resource="http://purl.org/umu/tso#ContentResource"/>
+        <rdfs:label xml:lang="en">Product</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/umu/tso#Profile -->
+
+    <owl:Class rdf:about="http://purl.org/umu/tso#Profile">
+        <rdfs:subClassOf rdf:resource="http://purl.org/umu/tso#SocialNetwork"/>
+        <rdfs:label xml:lang="en">Profile</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/umu/tso#Publisher -->
+
+    <owl:Class rdf:about="http://purl.org/umu/tso#Publisher">
+        <rdfs:label xml:lang="en">Publisher</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/umu/tso#RealLocation -->
+
+    <owl:Class rdf:about="http://purl.org/umu/tso#RealLocation">
+        <rdfs:subClassOf rdf:resource="http://purl.org/umu/tso#Location"/>
+        <rdfs:comment>The real place where the filming of the series took place</rdfs:comment>
+        <rdfs:label xml:lang="en">Real Location</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/umu/tso#RealPeriod -->
+
+    <owl:Class rdf:about="http://purl.org/umu/tso#RealPeriod">
+        <rdfs:subClassOf rdf:resource="http://purl.org/umu/tso#Period"/>
+        <rdfs:label xml:lang="en">Real Period</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/umu/tso#RelationType -->
+
+    <owl:Class rdf:about="http://purl.org/umu/tso#RelationType">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Relation Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/umu/tso#Relationship -->
+
+    <owl:Class rdf:about="http://purl.org/umu/tso#Relationship">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/umu/tso#hasRelationType"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/umu/tso#RelationType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/umu/tso#relationshipAgent"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/umu/tso#Agent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Relationship</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/umu/tso#Resource -->
+
+    <owl:Class rdf:about="http://purl.org/umu/tso#Resource">
+        <rdfs:label xml:lang="en">Resource</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/umu/tso#Role -->
+
+    <owl:Class rdf:about="http://purl.org/umu/tso#Role">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/umu/tso#Season -->
+
+    <owl:Class rdf:about="http://purl.org/umu/tso#Season">
+        <rdfs:subClassOf rdf:resource="http://purl.org/umu/tso#ContentResource"/>
+        <rdfs:label xml:lang="en">Season</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/umu/tso#SocialNetwork -->
+
+    <owl:Class rdf:about="http://purl.org/umu/tso#SocialNetwork">
+        <rdfs:subClassOf rdf:resource="http://purl.org/umu/tso#OnlineResourceService"/>
+        <rdfs:label xml:lang="en">Social Network</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/umu/tso#TVSerie -->
+
+    <owl:Class rdf:about="http://purl.org/umu/tso#TVSerie">
+        <rdfs:subClassOf rdf:resource="http://purl.org/umu/tso#ContentResource"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/umu/tso#hasFirstEpisode"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/umu/tso#Episode"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">TV Serie</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/umu/tso#Videogame -->
+
+    <owl:Class rdf:about="http://purl.org/umu/tso#Videogame">
+        <rdfs:subClassOf rdf:resource="http://purl.org/umu/tso#ContentResource"/>
+        <rdfs:label xml:lang="en">Video game</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/umu/tso#Webpage -->
+
+    <owl:Class rdf:about="http://purl.org/umu/tso#Webpage">
+        <rdfs:subClassOf rdf:resource="http://purl.org/umu/tso#Website"/>
+        <rdfs:label xml:lang="en">Webpage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/umu/tso#Website -->
+
+    <owl:Class rdf:about="http://purl.org/umu/tso#Website">
+        <rdfs:subClassOf rdf:resource="http://purl.org/umu/tso#OnlineResourceService"/>
+        <rdfs:label xml:lang="en">Website</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/umu/tso#Wiki -->
+
+    <owl:Class rdf:about="http://purl.org/umu/tso#Wiki">
+        <rdfs:subClassOf rdf:resource="http://purl.org/umu/tso#OnlineResourceService"/>
+        <rdfs:label xml:lang="en">Wiki</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/Human -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/Human">
+        <rdfs:subClassOf rdf:resource="http://purl.org/umu/tso#Character"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/Robot"/>
+        <rdfs:comment>Human is defined in opposition to robot</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/Planet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/Planet">
+        <rdfs:subClassOf rdf:resource="http://purl.org/umu/tso#FictionalLocation"/>
+        <rdfs:comment>The action in Foundation takes places in serveral Planets. To specify the location and the distance between the places and the ambience of the location the Planet class has been defined</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/Robot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/Robot">
+        <rdfs:subClassOf rdf:resource="http://purl.org/umu/tso#Character"/>
+        <rdfs:comment>Nonhuman characters</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Collection -->
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Collection">
+        <owl:disjointWith rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <owl:disjointWith rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+        <rdfs:label xml:lang="en">Collection</rdfs:label>
+        <skos:definition xml:lang="en">A meaningful collection of concepts.</skos:definition>
+        <skos:scopeNote xml:lang="en">Labelled collections can be used where you would like a set of concepts to be displayed under a &apos;node label&apos; in the hierarchy.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+        <owl:disjointWith rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+        <rdfs:label xml:lang="en">Concept</rdfs:label>
+        <skos:definition xml:lang="en">An idea or notion; a unit of thought.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+        <rdfs:label xml:lang="en">Concept Scheme</rdfs:label>
+        <skos:definition xml:lang="en">A set of concepts, optionally including statements about semantic relationships between those concepts.</skos:definition>
+        <skos:example xml:lang="en">Thesauri, classification schemes, subject heading lists, taxonomies, &apos;folksonomies&apos;, and other types of controlled vocabulary are all examples of concept schemes. Concept schemes are also embedded in glossaries and terminologies.</skos:example>
+        <skos:scopeNote xml:lang="en">A concept scheme may be defined to include concepts from different sources.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#OrderedCollection -->
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#OrderedCollection">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+        <rdfs:label xml:lang="en">Ordered Collection</rdfs:label>
+        <skos:definition xml:lang="en">An ordered collection of concepts, where both the grouping and the ordering are meaningful.</skos:definition>
+        <skos:scopeNote xml:lang="en">Ordered collections can be used where you would like a set of concepts to be displayed in a specific order, and optionally under a &apos;node label&apos;.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/Vault -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/Vault">
+        <rdf:type rdf:resource="http://purl.org/umu/tso#FictionalLocation"/>
+        <rdfs:comment>An Agent is any person or organization, real or fictitious, that
+forms part of the argument or participates in its creation</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/Foundation_(Asimov_novel) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/Foundation_(Asimov_novel)">
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Foundation_book"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/Galactic_Empire_(Isaac_Asimov) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/Galactic_Empire_(Isaac_Asimov)">
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Galactic_Empire"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/resource/Isaac_Asimov -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/resource/Isaac_Asimov">
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Isaac_Asimov"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Alfred_Enoch -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Alfred_Enoch">
+        <rdf:type rdf:resource="http://purl.org/umu/tso#Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Anacreon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Anacreon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/Planet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Brother_Dawn -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Brother_Dawn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/Human"/>
+        <page:isClonOf rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Emperor_Cleon_I"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Brother_Dawn_actor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Brother_Dawn_actor">
+        <rdf:type rdf:resource="http://purl.org/umu/tso#Cast"/>
+        <tso:hasCast rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Season1_Episode1"/>
+        <tso:hasCast rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Season1_Episode2"/>
+        <tso:hasCharacter rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Brother_Dawn"/>
+        <tso:hasPerson rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Cooper_Carter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Brother_Day -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Brother_Day">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/Human"/>
+        <page:isClonOf rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Emperor_Cleon_I"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Brother_Day_actor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Brother_Day_actor">
+        <rdf:type rdf:resource="http://purl.org/umu/tso#Cast"/>
+        <tso:hasCast rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Season1_Episode1"/>
+        <tso:hasCast rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Season1_Episode2"/>
+        <tso:hasCharacter rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Brother_Day"/>
+        <tso:hasPerson rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Lee_Pace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Brother_Dusk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Brother_Dusk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/Human"/>
+        <page:isClonOf rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Emperor_Cleon_I"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Brother_Dusk_actor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Brother_Dusk_actor">
+        <rdf:type rdf:resource="http://purl.org/umu/tso#Cast"/>
+        <tso:hasCast rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Season1_Episode1"/>
+        <tso:hasCast rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Season1_Episode2"/>
+        <tso:hasCharacter rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Brother_Dusk"/>
+        <tso:hasPerson rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Terence_Mann"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Cooper_Carter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Cooper_Carter">
+        <rdf:type rdf:resource="http://purl.org/umu/tso#Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Creation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Creation">
+        <rdf:type rdf:resource="http://purl.org/umu/tso#Contribution"/>
+        <tso:hasContribution rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Foundation_Series"/>
+        <tso:hasRole rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Josh_Friedman"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#David_S_Goyer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#David_S_Goyer">
+        <rdf:type rdf:resource="http://purl.org/umu/tso#Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Direction -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Direction">
+        <rdf:type rdf:resource="http://purl.org/umu/tso#Contribution"/>
+        <tso:hasContribution rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Foundation_Series"/>
+        <tso:hasRole rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#David_S_Goyer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Emperor_Cleon_I -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Emperor_Cleon_I">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/Human"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Emperor_Cleon_I_actor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Emperor_Cleon_I_actor">
+        <rdf:type rdf:resource="http://purl.org/umu/tso#Cast"/>
+        <tso:hasCast rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Season1_Episode2"/>
+        <tso:hasCast rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Season1_Episode3"/>
+        <tso:hasCharacter rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Emperor_Cleon_I"/>
+        <tso:hasPerson rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Lee_Pace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Eto_Demerzel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Eto_Demerzel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/Robot"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Eto_Demerzel_actress -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Eto_Demerzel_actress">
+        <rdf:type rdf:resource="http://purl.org/umu/tso#Cast"/>
+        <tso:hasCast rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Season1_Episode2"/>
+        <tso:hasCharacter rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Eto_Demerzel"/>
+        <tso:hasPerson rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Laura_Birn"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Foundation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Foundation">
+        <rdf:type rdf:resource="http://purl.org/umu/tso#FictionalGroup"/>
+        <tso:hasMember rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Gaal_Dornick"/>
+        <tso:hasMember rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Hari_Seldon"/>
+        <tso:hasMember rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Raych_Seldon"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Foundation_Series -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Foundation_Series">
+        <rdf:type rdf:resource="http://purl.org/umu/tso#TVSerie"/>
+        <tso:hasFirstSeason rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Season1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Foundation_book -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Foundation_book">
+        <rdf:type rdf:resource="http://purl.org/umu/tso#Book"/>
+        <tso:hasPart rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Foundation_Series"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Gaal_Dornick -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Gaal_Dornick">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/Human"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Gaal_Dornick_actress -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Gaal_Dornick_actress">
+        <rdf:type rdf:resource="http://purl.org/umu/tso#Cast"/>
+        <tso:hasCast rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Season1_Episode1"/>
+        <tso:hasCast rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Season1_Episode2"/>
+        <tso:hasCharacter rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Gaal_Dornick"/>
+        <tso:hasPerson rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Lou_Llobell"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Galactic_Empire -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Galactic_Empire">
+        <rdf:type rdf:resource="http://purl.org/umu/tso#FictionalGroup"/>
+        <tso:hasMember rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Brother_Dawn"/>
+        <tso:hasMember rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Brother_Day"/>
+        <tso:hasMember rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Brother_Dusk"/>
+        <tso:hasMember rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Emperor_Cleon_I"/>
+        <tso:hasMember rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Eto_Demerzel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Hari_Seldon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Hari_Seldon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/Human"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Hari_Seldon_actor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Hari_Seldon_actor">
+        <rdf:type rdf:resource="http://purl.org/umu/tso#Cast"/>
+        <tso:hasCast rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Season1_Episode1"/>
+        <tso:hasCast rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Season1_Episode2"/>
+        <tso:hasCharacter rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Hari_Seldon"/>
+        <tso:hasPerson rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Jared_Harris"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Isaac_Asimov -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Isaac_Asimov">
+        <rdf:type rdf:resource="http://purl.org/umu/tso#Person"/>
+        <tso:hasRole rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Writer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Jared_Harris -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Jared_Harris">
+        <rdf:type rdf:resource="http://purl.org/umu/tso#Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Josh_Friedman -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Josh_Friedman">
+        <rdf:type rdf:resource="http://purl.org/umu/tso#Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Laura_Birn -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Laura_Birn">
+        <rdf:type rdf:resource="http://purl.org/umu/tso#Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Lee_Pace -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Lee_Pace">
+        <rdf:type rdf:resource="http://purl.org/umu/tso#Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Lou_Llobell -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Lou_Llobell">
+        <rdf:type rdf:resource="http://purl.org/umu/tso#Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Raych_Seldon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Raych_Seldon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/Human"/>
+        <page:isDescendantOf rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Hari_Seldon"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Raych_Seldon_actor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Raych_Seldon_actor">
+        <rdf:type rdf:resource="http://purl.org/umu/tso#Cast"/>
+        <tso:hasCast rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Season1_Episode2"/>
+        <tso:hasCharacter rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Raych_Seldon"/>
+        <tso:hasPerson rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Alfred_Enoch"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Season1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Season1">
+        <rdf:type rdf:resource="http://purl.org/umu/tso#Season"/>
+        <tso:hasFirstEpisode rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Season1_Episode1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Season1_Episode1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Season1_Episode1">
+        <rdf:type rdf:resource="http://purl.org/umu/tso#Episode"/>
+        <tso:hasNextEpisode rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Season1_Episode2"/>
+        <tso:hasRelatedLocation rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Synnax"/>
+        <tso:hasRelatedLocation rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Trantor"/>
+        <tso:isFirstEpisodeOf rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Season1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Season1_Episode10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Season1_Episode10">
+        <rdf:type rdf:resource="http://purl.org/umu/tso#Episode"/>
+        <tso:hasPreviousEpisode rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Season1_Episode9"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Season1_Episode2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Season1_Episode2">
+        <rdf:type rdf:resource="http://purl.org/umu/tso#Episode"/>
+        <tso:hasNextEpisode rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Season1_Episode3"/>
+        <tso:hasPreviousEpisode rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Season1_Episode1"/>
+        <tso:hasRelatedLocation rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Trantor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Season1_Episode3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Season1_Episode3">
+        <rdf:type rdf:resource="http://purl.org/umu/tso#Episode"/>
+        <tso:hasNextEpisode rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Season1_Episode4"/>
+        <tso:hasPreviousEpisode rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Season1_Episode2"/>
+        <tso:hasRelatedLocation rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Terminus"/>
+        <tso:hasRelatedLocation rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Trantor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Season1_Episode4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Season1_Episode4">
+        <rdf:type rdf:resource="http://purl.org/umu/tso#Episode"/>
+        <tso:hasNextEpisode rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Season1_Episode5"/>
+        <tso:hasPreviousEpisode rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Season1_Episode3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Season1_Episode5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Season1_Episode5">
+        <rdf:type rdf:resource="http://purl.org/umu/tso#Episode"/>
+        <tso:hasNextEpisode rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Season1_Episode6"/>
+        <tso:hasPreviousEpisode rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Season1_Episode4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Season1_Episode6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Season1_Episode6">
+        <rdf:type rdf:resource="http://purl.org/umu/tso#Episode"/>
+        <tso:hasNextEpisode rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Season1_Episode7"/>
+        <tso:hasPreviousEpisode rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Season1_Episode5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Season1_Episode7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Season1_Episode7">
+        <rdf:type rdf:resource="http://purl.org/umu/tso#Episode"/>
+        <tso:hasNextEpisode rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Season1_Episode8"/>
+        <tso:hasPreviousEpisode rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Season1_Episode6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Season1_Episode8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Season1_Episode8">
+        <rdf:type rdf:resource="http://purl.org/umu/tso#Episode"/>
+        <tso:hasNextEpisode rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Season1_Episode9"/>
+        <tso:hasPreviousEpisode rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Season1_Episode7"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Season1_Episode9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Season1_Episode9">
+        <rdf:type rdf:resource="http://purl.org/umu/tso#Episode"/>
+        <tso:hasNextEpisode rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Season1_Episode10"/>
+        <tso:hasPreviousEpisode rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Season1_Episode8"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Synnax -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Synnax">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/Planet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Terence_Mann -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Terence_Mann">
+        <rdf:type rdf:resource="http://purl.org/umu/tso#Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Terminus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Terminus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/Planet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Terrorists -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Terrorists">
+        <rdf:type rdf:resource="http://purl.org/umu/tso#FictionalGroup"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Thespin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Thespin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/Planet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Trantor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Trantor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/Planet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Writer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Writer">
+        <rdf:type rdf:resource="http://purl.org/umu/tso#Contribution"/>
+        <tso:hasContribution rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#Foundation_book"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#a">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#b">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#c">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#d">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">When you have a clone your clone is your descendant</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isDescendantOf</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/Human"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/Human"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#b"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/isClonOf"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#a"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#b"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/isDescendantOf"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#a"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#b"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Member of two different fictional groups are enemies</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isEnemyOf</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.org/umu/tso#hasMember"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#a"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#b"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://purl.org/umu/tso#hasMember"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#c"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#d"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#a"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#c"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/isEnemyOf"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#b"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Two clons of the same ascendant are brothers</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isBrotherOf</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/isClonOf"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#a"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/isClonOf"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#b"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#c"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#a"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#b"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/isBrotherOf"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#a"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#b"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
