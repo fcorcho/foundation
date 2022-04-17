@@ -1,0 +1,303 @@
+{
+  "@context" : {
+    "hasCast" : {
+      "@id" : "http://purl.org/umu/tso#hasCast",
+      "@type" : "@id"
+    },
+    "Wiki" : {
+      "@id" : "http://purl.org/umu/tso#Wiki"
+    },
+    "scopeNote" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#scopeNote"
+    },
+    "FictionalLocation" : {
+      "@id" : "http://purl.org/umu/tso#FictionalLocation"
+    },
+    "Post" : {
+      "@id" : "http://purl.org/umu/tso#Post"
+    },
+    "isEnemyOf" : {
+      "@id" : "http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/isEnemyOf",
+      "@type" : "@id"
+    },
+    "Robot" : {
+      "@id" : "http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/Robot"
+    },
+    "Itinerary" : {
+      "@id" : "http://purl.org/umu/tso#Itinerary"
+    },
+    "Webpage" : {
+      "@id" : "http://purl.org/umu/tso#Webpage"
+    },
+    "example" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#example"
+    },
+    "Period" : {
+      "@id" : "http://purl.org/umu/tso#Period"
+    },
+    "hasFirstSeason" : {
+      "@id" : "http://purl.org/umu/tso#hasFirstSeason",
+      "@type" : "@id"
+    },
+    "Relationship" : {
+      "@id" : "http://purl.org/umu/tso#Relationship"
+    },
+    "isContributionOf" : {
+      "@id" : "http://purl.org/umu/tso#isContributionOf",
+      "@type" : "@id"
+    },
+    "hasPerson" : {
+      "@id" : "http://purl.org/umu/tso#hasPerson",
+      "@type" : "@id"
+    },
+    "ContentResource" : {
+      "@id" : "http://purl.org/umu/tso#ContentResource"
+    },
+    "Category" : {
+      "@id" : "http://purl.org/umu/tso#Category"
+    },
+    "OrderedCollection" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#OrderedCollection"
+    },
+    "isRuleEnabled" : {
+      "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"
+    },
+    "Product" : {
+      "@id" : "http://purl.org/umu/tso#Product"
+    },
+    "Cast" : {
+      "@id" : "http://purl.org/umu/tso#Cast"
+    },
+    "Publisher" : {
+      "@id" : "http://purl.org/umu/tso#Publisher"
+    },
+    "ItineraryResource" : {
+      "@id" : "http://purl.org/umu/tso#ItineraryResource"
+    },
+    "Context" : {
+      "@id" : "http://purl.org/umu/tso#Context"
+    },
+    "hasRole" : {
+      "@id" : "http://purl.org/umu/tso#hasRole",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "hasNextEpisode" : {
+      "@id" : "http://purl.org/umu/tso#hasNextEpisode",
+      "@type" : "@id"
+    },
+    "Human" : {
+      "@id" : "http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/Human"
+    },
+    "Character" : {
+      "@id" : "http://purl.org/umu/tso#Character"
+    },
+    "hasPart" : {
+      "@id" : "http://purl.org/umu/tso#hasPart",
+      "@type" : "@id"
+    },
+    "Concept" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    "Location" : {
+      "@id" : "http://purl.org/umu/tso#Location"
+    },
+    "Multimedia" : {
+      "@id" : "http://purl.org/umu/tso#Multimedia"
+    },
+    "isBrotherOf" : {
+      "@id" : "http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/isBrotherOf",
+      "@type" : "@id"
+    },
+    "Fragment" : {
+      "@id" : "http://purl.org/umu/tso#Fragment"
+    },
+    "Episode" : {
+      "@id" : "http://purl.org/umu/tso#Episode"
+    },
+    "Event" : {
+      "@id" : "http://purl.org/umu/tso#Event"
+    },
+    "isHuman" : {
+      "@id" : "http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/isHuman",
+      "@type" : "@id"
+    },
+    "isMemberOf" : {
+      "@id" : "http://purl.org/umu/tso#isMemberOf",
+      "@type" : "@id"
+    },
+    "Person" : {
+      "@id" : "http://purl.org/umu/tso#Person"
+    },
+    "relationshipAgent" : {
+      "@id" : "http://purl.org/umu/tso#relationshipAgent",
+      "@type" : "@id"
+    },
+    "hasRelationType" : {
+      "@id" : "http://purl.org/umu/tso#hasRelationType",
+      "@type" : "@id"
+    },
+    "Book" : {
+      "@id" : "http://purl.org/umu/tso#Book"
+    },
+    "Agent" : {
+      "@id" : "http://purl.org/umu/tso#Agent"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "Role" : {
+      "@id" : "http://purl.org/umu/tso#Role"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "Article" : {
+      "@id" : "http://purl.org/umu/tso#Article"
+    },
+    "hasMember" : {
+      "@id" : "http://purl.org/umu/tso#hasMember",
+      "@type" : "@id"
+    },
+    "Website" : {
+      "@id" : "http://purl.org/umu/tso#Website"
+    },
+    "hasPreviousEpisode" : {
+      "@id" : "http://purl.org/umu/tso#hasPreviousEpisode",
+      "@type" : "@id"
+    },
+    "Profile" : {
+      "@id" : "http://purl.org/umu/tso#Profile"
+    },
+    "RealPeriod" : {
+      "@id" : "http://purl.org/umu/tso#RealPeriod"
+    },
+    "TVSerie" : {
+      "@id" : "http://purl.org/umu/tso#TVSerie"
+    },
+    "Blog" : {
+      "@id" : "http://purl.org/umu/tso#Blog"
+    },
+    "isClonOf" : {
+      "@id" : "http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/isClonOf",
+      "@type" : "@id"
+    },
+    "hasItineraryResource" : {
+      "@id" : "http://purl.org/umu/tso#hasItineraryResource",
+      "@type" : "@id"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "definition" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#definition"
+    },
+    "Planet" : {
+      "@id" : "http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/Planet"
+    },
+    "hasSubgroup" : {
+      "@id" : "http://purl.org/umu/tso#hasSubgroup",
+      "@type" : "@id"
+    },
+    "ConceptScheme" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+    },
+    "isRobot" : {
+      "@id" : "http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/isRobot",
+      "@type" : "@id"
+    },
+    "isCastOf" : {
+      "@id" : "http://purl.org/umu/tso#isCastOf",
+      "@type" : "@id"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "Film" : {
+      "@id" : "http://purl.org/umu/tso#Film"
+    },
+    "isFirstEpisodeOf" : {
+      "@id" : "http://purl.org/umu/tso#isFirstEpisodeOf",
+      "@type" : "@id"
+    },
+    "FictionalPeriod" : {
+      "@id" : "http://purl.org/umu/tso#FictionalPeriod"
+    },
+    "isCloneOf" : {
+      "@id" : "http://www.semanticweb.org/fcorcho/ontologies/2022/3/foundation#isCloneOf",
+      "@type" : "@id"
+    },
+    "Contribution" : {
+      "@id" : "http://purl.org/umu/tso#Contribution"
+    },
+    "Comic" : {
+      "@id" : "http://purl.org/umu/tso#Comic"
+    },
+    "Resource" : {
+      "@id" : "http://purl.org/umu/tso#Resource"
+    },
+    "MultimediaObject" : {
+      "@id" : "http://purl.org/umu/tso#MultimediaObject"
+    },
+    "SocialNetwork" : {
+      "@id" : "http://purl.org/umu/tso#SocialNetwork"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Group" : {
+      "@id" : "http://purl.org/umu/tso#Group"
+    },
+    "hasRelatedLocation" : {
+      "@id" : "http://purl.org/umu/tso#hasRelatedLocation",
+      "@type" : "@id"
+    },
+    "OnlineResourceService" : {
+      "@id" : "http://purl.org/umu/tso#OnlineResourceService"
+    },
+    "FictionalGroup" : {
+      "@id" : "http://purl.org/umu/tso#FictionalGroup"
+    },
+    "isSubgroupOf" : {
+      "@id" : "http://purl.org/umu/tso#isSubgroupOf",
+      "@type" : "@id"
+    },
+    "RelationType" : {
+      "@id" : "http://purl.org/umu/tso#RelationType"
+    },
+    "isDescendantOf" : {
+      "@id" : "http://www.semanticweb.org/fcorcho/ontologies/2022/3/dbpedia.org/page/isDescendantOf",
+      "@type" : "@id"
+    },
+    "Videogame" : {
+      "@id" : "http://purl.org/umu/tso#Videogame"
+    },
+    "hasFirstEpisode" : {
+      "@id" : "http://purl.org/umu/tso#hasFirstEpisode",
+      "@type" : "@id"
+    },
+    "hasContribution" : {
+      "@id" : "http://purl.org/umu/tso#hasContribution",
+      "@type" : "@id"
+    },
+    "Season" : {
+      "@id" : "http://purl.org/umu/tso#Season"
+    },
+    "RealLocation" : {
+      "@id" : "http://purl.org/umu/tso#RealLocation"
+    },
+    "Collection" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Collection"
+    },
+    "hasCharacter" : {
+      "@id" : "http://purl.org/umu/tso#hasCharacter",
+      "@type" : "@id"
+    },
+    "OnlineGame" : {
+      "@id" : "http://purl.org/umu/tso#OnlineGame"
+    }
+  }
+}
